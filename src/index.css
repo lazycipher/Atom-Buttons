@@ -1,0 +1,321 @@
+/* .btn class applies to every button */
+.btn {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0.5px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    outline 0.15s ease-in-out, border 0.15s ease-in-out,
+    filter 0.15s ease-in-out;
+}
+
+.btn > .icon {
+  line-height: inherit;
+  margin: auto;
+}
+
+.btn > .icon-left {
+  left: 18px;
+  float: left;
+}
+
+.btn > .icon-right {
+  right: 18px;
+  float: right;
+}
+
+/* round button */
+
+.rounded {
+  border-radius: 25px;
+}
+
+.round-edge {
+  border-radius: 5px;
+}
+
+/* If Overrides BG */
+
+.overridden-bg:hover {
+  filter: brightness(0.7);
+}
+
+.overridden-bg:active {
+  filter: brightness(0.6);
+}
+
+.overridden-bg:focus {
+  filter: brightness(0.6);
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  color: #fff;
+  background-color: #0f62fe;
+}
+
+.btn-primary:hover {
+  background-color: #054ada;
+}
+
+.btn-primary:active {
+  background-color: #002d9c;
+  outline: #002d9c 2px solid;
+  border: #ffffff 0.5px solid;
+}
+
+.btn-primary:focus {
+  box-sizing: border-box;
+  outline: #002d9c 2px solid;
+  border: #ffffff 0.5px solid;
+}
+
+.btn-primary:disabled {
+  color: #8d8d8d;
+  background: #c6c6c6;
+}
+
+/* Secondary Button Styling */
+.btn-secondary {
+  color: #fff;
+  background-color: #393939;
+}
+
+.btn-secondary:hover {
+  background-color: #4c4c4c;
+}
+
+.btn-secondary:active {
+  background-color: #161616;
+  outline: 2px #161616 solid;
+  border: 0.5px #ffffff solid;
+}
+
+.btn-secondary:focus {
+  box-sizing: border-box;
+  outline: 2px #161616 solid;
+  border: 0.5px #ffffff solid;
+}
+
+.btn-secondary:disabled {
+  color: #8d8d8d;
+  background: #c6c6c6;
+}
+
+/* Danger Button Styling */
+.btn-danger {
+  color: #fff;
+  background-color: #da1e28;
+}
+
+.btn-danger:hover {
+  background-color: #ba1b23;
+}
+
+.btn-danger:active {
+  background-color: #750e13;
+  outline: 2px #750e13 solid;
+  border: 0.5px #ffffff solid;
+}
+
+.btn-danger:focus {
+  box-sizing: border-box;
+  outline: 2px #da1e28 solid;
+  border: 0.5px #ffffff solid;
+}
+
+.btn-danger:disabled {
+  color: #8d8d8d;
+  background: #c6c6c6;
+}
+
+/* Ghost Button Styling */
+.btn-ghost {
+  color: #0f62fe;
+  background-color: transparent;
+}
+
+.btn-ghost:hover {
+  background-color: #ecf2ff;
+}
+
+.btn-ghost:active {
+  background-color: #d0e2ff;
+  outline: 2px #0f62fe solid;
+  border: 0.5px solid #ffffff;
+}
+
+.btn-ghost:focus {
+  outline: 2px #0f62fe solid;
+  border: 0.5px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.btn-ghost:disabled {
+  color: #8d8d8d;
+  background: #c6c6c6;
+}
+
+/* For Different Button Sizes */
+.btn-sm {
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.btn-md {
+  font-size: 1.25rem;
+  padding: 0.45rem 1rem;
+}
+
+.btn-lg {
+  font-size: 1.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* dd */
+
+.disabled {
+  background-color: #fff;
+  border-color: #bababa;
+  color: #bababa;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+  border: 1px solid;
+}
+
+.disabled:hover {
+  background-color: #fff;
+  color: #bababa;
+  border-color: #bababa;
+  outline: none;
+}
+
+.disabled:active {
+  background-color: #fff;
+  color: #bababa;
+  border-color: #bababa;
+  outline: none;
+}
+
+.disabled:focus {
+  background-color: #fff;
+  color: #bababa;
+  border-color: #bababa;
+  outline: none;
+}
+
+/* IconOnly */
+
+/* .only-icon {
+  padding: 1rem;
+} */
+
+.only-icon.btn-sm {
+  padding: 0.5rem;
+}
+
+.only-icon.btn-md {
+  padding: 0.75rem;
+}
+
+.only-icon.btn-lg {
+  padding: 1rem;
+}
+
+/* Margin Classes */
+
+.m-0 {
+  margin: 0;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+/* content */
+
+.content {
+  line-height: inherit;
+}
+
+/* --------- Tooltip Styles ---------- */
+.tooltip::after {
+  background-color: #333;
+  color: #ffffff;
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  padding: 10px 15px;
+}
+
+.tooltip::before {
+  background-color: #333;
+  content: ' ';
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  z-index: 999;
+  padding: 0.25rem 0.5rem;
+}
+
+.tooltip:hover::after {
+  display: block;
+}
+
+.tooltip:hover::before {
+  display: block;
+}
+
+.tooltip.bottom::after {
+  content: attr(data-tooltip);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 10px));
+}
+
+.tooltip.bottom::before {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 5px)) rotate(45deg);
+}
+
+.tooltip.tooltip-sm::after {
+  font-size: 0.7rem;
+}
+
+.tooltip.tooltip-sm::before {
+  font-size: 0.7rem;
+}
+
+.tooltip.tooltip-md::after {
+  font-size: 0.9rem;
+}
+
+.tooltip.tooltip-md::before {
+  font-size: 0.9rem;
+}
+.tooltip.tooltip-lg::after {
+  font-size: 1.2rem;
+}
+
+.tooltip.tooltip-lg::before {
+  font-size: 1.2rem;
+}
